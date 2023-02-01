@@ -3,7 +3,9 @@
 const swiper = new Swiper('.sliderOp', {
     speed: 700,
     direction: 'vertical',
-    mousewheel: true,
+    mousewheel: {
+        sensitivity: .5,
+    },
     hashNavigation: {
         watchState: true,
         replaceState: true,
@@ -13,7 +15,7 @@ const swiper = new Swiper('.sliderOp', {
         type: 'bullets',
     },
     touchRatio: .5,
-    sensitivity: .5,
+    sensitivity: 10,
 });
 
 //слайдер в первом слайде
