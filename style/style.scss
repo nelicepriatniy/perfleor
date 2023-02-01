@@ -371,6 +371,9 @@ header {
     & .container {
         display: flex;
         margin-top: 190rem;
+        &.mobsec  {
+            display: none;
+        }
     }
 }
 
@@ -1005,6 +1008,7 @@ header {
 
     }
 }
+
 
 @media (max-width: 1200px) {
     .desk, .mob {

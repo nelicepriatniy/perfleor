@@ -326,6 +326,9 @@ header {
   display: flex;
   margin-top: 190rem;
 }
+.second .container.mobsec {
+  display: none;
+}
 
 .second__bg {
   position: absolute;
