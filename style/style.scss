@@ -1027,6 +1027,14 @@ header {
         display: none;
     }
 
+    .second {
+        & .container {
+            &.mobsec {
+                display: flex;
+            }
+        }
+    }
+
     html {
         font-size: calc(100vw / 680);
     }
@@ -1222,6 +1230,9 @@ header {
     .second {
         & .container {
             margin-top: 143rem;
+            &.mobsec {
+                display: flex;
+            }
         }
     }
 

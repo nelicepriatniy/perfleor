@@ -979,6 +979,9 @@ header {
   .second .container.desk {
     display: none;
   }
+  .second .container.mobsec {
+    display: flex;
+  }
   html {
     font-size: 0.1470588235vw;
   }
@@ -1148,6 +1151,9 @@ header {
   }
   .second .container {
     margin-top: 143rem;
+  }
+  .second .container.mobsec {
+    display: flex;
   }
   .second__left__text {
     order: 1;
