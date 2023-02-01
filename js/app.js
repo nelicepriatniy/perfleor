@@ -5,6 +5,7 @@ const swiper = new Swiper('.sliderOp', {
     direction: 'vertical',
     mousewheel: {
         sensitivity: .3,
+        thresholdDelta: 100,
     },
     hashNavigation: {
         watchState: true,
