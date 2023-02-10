@@ -38,9 +38,11 @@ html {
 }
 
 header {
-  padding: 50rem 0;
+  padding: 32rem 0;
+  width: 100%;
   position: fixed;
   z-index: 9;
+  background: #DEDEDE;
 }
 
 .wraper-for-mob-menu {
@@ -334,7 +336,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 578rem;
+  height: 540rem;
   z-index: -1;
 }
 
@@ -363,7 +365,6 @@ header {
   display: grid;
   grid-template-columns: 400rem 443rem;
   grid-gap: 40rem;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
@@ -439,7 +440,6 @@ header {
   font-family: "Raleway", sans-serif;
   font-size: 12rem;
   letter-spacing: 0.05em;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 100rem;
@@ -648,7 +648,6 @@ header {
 
 .fourth__left {
   margin-right: 345rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 50rem;
@@ -826,8 +825,7 @@ header {
 }
 
 .contacts__left {
-  margin-top: 50rem;
-  width: -webkit-fit-content;
+  margin-top: 67rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -844,29 +842,29 @@ header {
 .contacts__left__adress {
   font-weight: 600;
   color: #393C44;
-  font-size: 16rem;
+  font-size: 20rem;
   margin-bottom: 5rem;
   line-height: 130.79%;
 }
 
 .contacts__left__adress-name {
   font-family: "Montserrat", sans-serif;
-  font-size: 16rem;
+  font-size: 20rem;
   color: #393C44;
   line-height: 153.4%;
-  margin-bottom: 25rem;
+  margin-bottom: 20rem;
 }
 
 .contacts__left__grid {
   display: grid;
-  grid-template-columns: 251rem 300rem;
-  -moz-column-gap: 40rem;
-       column-gap: 40rem;
+  grid-template-columns: 251rem 370rem;
+  -moz-column-gap: 153rem;
+       column-gap: 153rem;
   row-gap: 25rem;
 }
 
 .contacts__item__title {
-  font-size: 16rem;
+  font-size: 20rem;
   font-weight: 600;
   color: #393C44;
   line-height: 130.79%;
@@ -875,7 +873,7 @@ header {
 
 .contacts__item__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 16rem;
+  font-size: 20rem;
   color: #393C44;
   line-height: 153.4%;
 }
@@ -947,7 +945,7 @@ header {
 
 .maps {
   width: 100vw;
-  height: 300rem;
+  height: 390rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -966,6 +964,10 @@ header {
 }
 .anim-slie.swiper-slide-next .anim-item {
   transform: translateY(-50%);
+}
+
+.first__second__bg {
+  height: 795rem;
 }
 
 @media (max-width: 1200px) {
@@ -1325,7 +1327,6 @@ header {
   .fourth__right {
     width: 100%;
     padding: 60rem 30rem;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -1628,7 +1629,6 @@ header {
   .form-spec {
     grid-template-columns: 1fr;
     row-gap: 5rem;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

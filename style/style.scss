@@ -74,9 +74,11 @@ html {
 }
 
 header {
-    padding: 50rem 0;
+    padding: 32rem 0;
+    width: 100%;
     position: fixed;
     z-index: 9;
+    background: #DEDEDE;
 }
 
 .wraper-for-mob-menu {
@@ -381,7 +383,7 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 578rem;
+    height: 540rem;
     z-index: -1;
 }
 
@@ -864,7 +866,7 @@ header {
 }
 
 .contacts__left {
-    margin-top: 50rem;
+    margin-top: 67rem;
     width: fit-content;
 }
 
@@ -880,28 +882,28 @@ header {
 .contacts__left__adress {
     font-weight: 600;
     color: $gray;
-    font-size: $s16;
+    font-size: 20rem;
     margin-bottom: 5rem;
     line-height: 130.79%;
 }
 
 .contacts__left__adress-name {
     font-family: $Montserrat;
-    font-size: $s16;
+    font-size: 20rem;
     color: $gray;
     line-height: 153.4%;
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
 }
 
 .contacts__left__grid {
     display: grid;
-    grid-template-columns: 251rem 300rem;
-    column-gap: 40rem;
+    grid-template-columns: 251rem 370rem;
+    column-gap: 153rem;
     row-gap: 25rem;
 }
 
 .contacts__item__title {
-    font-size: $s16;
+    font-size: 20rem;
     font-weight: 600;
     color: $gray;
     line-height: 130.79%;
@@ -910,7 +912,7 @@ header {
 
 .contacts__item__text {
     font-family: $Montserrat;
-    font-size: $s16;
+    font-size: 20rem;
     color: $gray;
     line-height: 153.4%;
     
@@ -984,7 +986,7 @@ header {
 
 .maps {
     width: 100vw;
-    height: 300rem;
+    height: 390rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1009,6 +1011,12 @@ header {
         }
 
     }
+}
+
+//правки
+
+.first__second__bg {
+    height: 795rem;
 }
 
 

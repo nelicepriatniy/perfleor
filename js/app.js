@@ -17,6 +17,7 @@ const swiper = new Swiper('.sliderOp', {
     },
     touchRatio: .5,
     sensitivity: 10,
+    watchSlidesProgress: true,
 });
 
 //слайдер в первом слайде
