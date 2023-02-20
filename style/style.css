@@ -21,11 +21,15 @@
 }
 
 body {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
+  max-width: 100vw;
 }
 
 html {
+  max-height: 100vh;
+  overflow: hidden;
+  max-width: 100vw;
   font-size: 0.0520833333vw;
 }
 
@@ -2178,5 +2182,9 @@ header {
   }
   .history-slide::after {
     bottom: 164rem;
+  }
+  .lineHistory {
+    top: 581rem;
+    left: 30rem;
   }
 }/*# sourceMappingURL=style.css.map */
