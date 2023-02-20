@@ -38,6 +38,18 @@ const swiper1 = new Swiper('.first__slider', {
       },
 });
 
+
+const historySlider = new Swiper('.history-slider', {
+    speed: 600,
+    freeMode: true,
+    slidesPerView: 'auto',
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+});
+
+
 //слайдер товаров
 
 const swipertovar = new Swiper('.tovars-slider', {
@@ -166,4 +178,45 @@ let mobHeader = document.querySelector('.wraper-for-mob-menu')
 mobBtn.onclick = function(){
     mobHeader.classList.toggle('active')
     blockClose.classList.toggle('active');
+}
+
+
+let sliderHistory = document.querySelector('.scroll-history');
+
+console.log(sliderHistory)
+
+sliderHistory.addEventListener('mouseup', function(){
+    console.log(12)
+})
+
+//присвоение активного слайда в истории
+
+let historySlides = document.querySelectorAll('.history-slide')
+let contWidth = document.querySelector('.container').getBoundingClientRect().x;
+console.log(historySlides)
+
+function checkHistorySlides (){
+    // console.log(12)
+    historySlides.forEach((el)=>{
+        if(el.getBoundingClientRect().x <= contWidth) {
+            el.classList.add('active')
+        } else {
+            el.classList.remove('active')
+
+        }
+    })
+    requestAnimationFrame(checkHistorySlides)
+}
+
+checkHistorySlides()
+
+
+//появление больше в странице истории
+
+let moreInfoBtn = document.querySelector('.moreinfo');
+let moreInfoText =  document.querySelector('.history-text__description');
+
+moreInfoBtn.onclick = ()=>{
+    moreInfoText.classList.add('active')
+    blockClose.classList.add('active');
 }
