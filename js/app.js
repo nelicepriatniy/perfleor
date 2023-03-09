@@ -38,6 +38,8 @@ const swiper1 = new Swiper('.first__slider', {
       },
 });
 
+//слайдер страницы истории
+
 
 const historySlider = new Swiper('.history-slider', {
     speed: 600,
@@ -46,6 +48,10 @@ const historySlider = new Swiper('.history-slider', {
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
+    },
+    mousewheel: {
+        sensitivity: .3,
+        thresholdDelta: 100,
     },
 });
 
@@ -119,7 +125,7 @@ swiper.on('slideChange', () => {
 
 //открытие попапа
 
-let buttons = document.querySelectorAll('.third__bottom__button__pop');
+let buttons = document.querySelectorAll('.popup-open-btn');
 let blockClose = document.querySelector('.blockClose');
 
 buttons.forEach(elem=>{

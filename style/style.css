@@ -48,7 +48,6 @@ header {
   width: 100%;
   position: fixed;
   z-index: 9;
-  background: #DEDEDE;
   top: 0;
 }
 
@@ -156,7 +155,7 @@ header {
 .prewB,
 .nextB {
   height: 40rem;
-  aspect-ratio: 1/1;
+  width: 40rem;
   background: white;
   display: flex;
   justify-content: center;
@@ -239,9 +238,15 @@ header {
   background: #53C1D0;
 }
 
+.tovar {
+  height: 570rem;
+  margin-right: 58rem;
+}
+
 .first__second__bg {
   position: absolute;
-  top: 155rem;
+  top: 119rem;
+  height: 960.5rem;
 }
 
 .second__wraer {
@@ -250,16 +255,11 @@ header {
   display: flex;
   align-items: center;
   padding-top: 200rem;
-  padding-left: 170rem;
 }
 
 .second__wraper__imgs {
   display: flex;
-}
-
-.tovar {
-  height: 570rem;
-  margin-right: 58rem;
+  margin-right: 720rem;
 }
 
 .wraper__star {
@@ -313,11 +313,12 @@ header {
   position: relative;
   align-items: center;
   height: 70rem;
+  cursor: pointer;
 }
 
 .button__arrow {
-  height: 100%;
-  aspect-ratio: 1/1;
+  height: 70rem;
+  width: 70rem;
   background: #70D4FF;
   display: flex;
   align-items: center;
@@ -985,10 +986,6 @@ header {
   transform: translateY(-50%);
 }
 
-.first__second__bg {
-  height: 795rem;
-}
-
 .abshref {
   z-index: 99;
 }
@@ -1448,9 +1445,9 @@ header {
   .second__wraper__imgs {
     order: 2;
     position: absolute;
-    top: 251rem;
+    top: 202rem;
     z-index: 1;
-    left: 122rem;
+    left: 18rem;
   }
   .second__wraper__text {
     margin-top: 0;
@@ -1788,6 +1785,12 @@ header {
   }
   .blueLogo {
     height: 45rem;
+  }
+  .first__second__bg {
+    top: auto;
+    bottom: 0;
+    height: auto;
+    width: 100vw;
   }
 }
 @media (max-width: 620px) {
@@ -2199,5 +2202,15 @@ header {
   }
   .blueLogo {
     height: 45rem;
+  }
+  .first__second__bg {
+    height: auto;
+  }
+  .second__wraper__imgs {
+    position: absolute;
+    top: 50rem;
+  }
+  .wraper__star {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
