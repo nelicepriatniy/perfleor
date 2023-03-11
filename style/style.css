@@ -316,6 +316,24 @@ header {
   cursor: pointer;
 }
 
+.gray__button {
+  display: flex;
+  background: #42495C;
+  border-radius: 100rem;
+  padding-left: 30rem;
+  border: none;
+  color: white;
+  font-size: 16rem;
+  font-weight: 700;
+  position: relative;
+  align-items: center;
+  height: 70rem;
+  cursor: pointer;
+}
+.gray__button .button__arrow {
+  background: #827D91;
+}
+
 .button__arrow {
   height: 70rem;
   width: 70rem;
@@ -636,12 +654,9 @@ header {
 }
 
 .popup__right__button {
-  background: #42495C;
   color: #F7F9FA;
   margin-bottom: 55rem;
-}
-.popup__right__button .button__arrow {
-  background: #827D91;
+  margin-right: 33rem;
 }
 
 .tovar__slide {
@@ -1303,6 +1318,11 @@ header {
   margin-right: 1010rem;
 }
 
+.papup__buttons {
+  display: flex;
+  width: 641rem;
+}
+
 @media (max-width: 1200px) {
   .desk,
   .mob {
@@ -1792,6 +1812,19 @@ header {
     height: auto;
     width: 100vw;
   }
+  .papup__buttons {
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .popup__right__button {
+    margin-right: 0;
+  }
+  .gray__button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22rem;
+  }
 }
 @media (max-width: 620px) {
   .desk,
@@ -2099,7 +2132,7 @@ header {
     margin-top: 40rem;
   }
   .popup__left__img {
-    height: 114rem;
+    height: auto;
     width: 90rem;
     margin: 0;
     margin-bottom: 9rem;
@@ -2212,5 +2245,32 @@ header {
   }
   .wraper__star {
     margin: 0;
+  }
+  .papup__buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 30rem;
+  }
+  .popup__right__button.gray__button {
+    display: flex;
+    margin-right: 11rem;
+    margin-left: 0;
+  }
+  .popup__right__button.gray__button .button__arrow {
+    margin-left: 5rem;
+  }
+  .popup__right__button.gray__button.lapb {
+    display: none;
+  }
+  .popup__right__button.blue__button {
+    display: flex;
+    margin-left: 0;
+  }
+  .popup__right__button.blue__button .button__arrow {
+    margin-left: 5rem;
+  }
+  .popup__right__button.blue__button.lapb {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
